@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+    
+<head>
+    <title>Book Finder</title>
+    <meta charset="utf-8">
+    <link type="text/css" rel="stylesheet" href="css/project.css">
+    <script src ="js/signup.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+
+<body>
+    
+    <div class="fullWidth">
+        <!a banner>
+        <!div class="banner">
+        
+        <!stational header>
+        <div class="header alignR">
+            <div class="spaceB "></div>
+            <p class ="whiteText headerText">Book Finder</p>
+            <div class="space"></div>
+        </div>
+        
+        <!buttons for navagation>
+        <div class="btn-group whiteText alignC">
+            <a href=index.htm><button>Home</button></a>
+            <a href=logIn.htm><button>Login</button></a>
+            <a href=bookSearch.htm><button>Search</button></a>
+        </div>
+        
+        <!body section>
+        <div class="wBackground center contentText"> 
+            <div class="spaceM"></div><br><br>
+            <h1 class="alignC">This is the register page</h1>
+            
+            <div class="align30 contentText">
+                <h2>First Name:&nbsp;&nbsp;<input type="text" id="firstName" class = "roundinput"></h2>
+                <h2>Last Name:&nbsp;&nbsp;<input type="text" id="lastName" class = "roundinput"></h2>
+                <h2>Street number:&nbsp;&nbsp;<input type="text" id="streetNumber" class = "roundinput"></h2>
+                <h2>City:&nbsp;&nbsp;<input type="text" id="city" class = "roundinput"></h2>
+                <h2>Age:&nbsp;&nbsp;<input type="number" class="roundinput" id="age" name="age" min="1"></h2>
+                <h2>Gender:&nbsp;&nbsp;
+                    Male <input type="radio" id="male" name="gender" value="male">
+                    Female<input type="radio" id="female" name="gender" value="female">
+                    Other<input type="radio" id="other" name="gender" value="other">
+                </h2>
+                <h2>Email:&nbsp;&nbsp;<input type="email" id="email" class = "roundinput"></h2>
+                <h2>Password:&nbsp;&nbsp;<input type="text" id="passwordOne" class = "roundinput"></h2>
+                <h2>Confirm Password:&nbsp;&nbsp;<input type="text" id="passwordTwo" class = "roundinput"></h2><br>
+                <button id="confirmButton" class="roundButton" onclick="signup();">&nbsp;Confirm&nbsp;</button>
+                &nbsp;&nbsp;
+                <button id="resetButton" class="roundButton" onclick="reset();">&nbsp;Reset&nbsp;</button>
+                &nbsp;
+            </div>  
+            <!watermark>
+            <div>
+                <p class="smallText alignC blueLine"><br/>
+                    Copyright &copy; Book Finder 2020</p>
+            </div>
+            
+            <div class="space"></div>
+            
+        </div>
+    </div>
+    
+</body>
+    
+</html>

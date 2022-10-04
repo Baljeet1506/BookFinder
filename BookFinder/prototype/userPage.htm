@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+    
+<head>
+    <title>Book Finder</title>
+    <meta charset="utf-8">
+    <link type="text/css" rel="stylesheet" href="css/project.css">
+    <link type="text/css" rel="stylesheet" href="css/userHomePage.css">
+    <script src="js/userPageControl.js"></script>
+    <script src="js/control.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            if(sessionStorage.getItem("userID")!=null){
+               showPersonalInformation(); 
+            }
+            else{
+                alert("Please Login");
+                location.replace("http://bookfinderproject.com/logIn.htm");
+            }
+        });
+    </script>
+</head>
+
+<body>
+    <div class="fullWidth">
+        <!a banner>
+        <!div class="banner">
+        <!stational header>
+        <div class="header alignR">
+            <div class="spaceB "></div>
+            <p class ="whiteText headerText">Book Finder</p>
+            <div class="space"></div>
+        </div>
+        
+
+        <!buttons for navagation>
+        <div class="btn-group whiteText alignC">
+            <a href=index.htm>
+                <button>Home</button></a>
+            <a href=mail.htm>
+                <button>Mail</button></a>
+            <a href=setting.htm>
+                <button>Setting</button></a>
+        </div>
+        
+        <!body section>
+        <div class="wBackground center contentText">
+            <div class="spaceB"></div>
+            <div class="table">
+                <div class="row">
+                    <div class="alignC userPanel">
+                    <img src="image/userIcon.jpg" height="80" width="80">
+                    <h3 id="welcome" class="blueText"></h3>
+                    </div>
+                    <div class="detailInfo table alignR2">
+                        <div class="aligmC userDetailTab">
+                            <button class="links bigFont" onclick="openContent('userInfo');">User Information</button>
+                            <button class="links bigFont" onclick="openContent('bookInfo');">Book Information</button>
+                        </div>
+                        <div class="space100 bivLine"></div>
+                        <div>
+                            <div id="userInfo" class="content align30 contentText" style="display: block">
+                            <div>
+                                <label for="fname">First Name :<input type="text" class="roundinput" id="fname" name="fname"></label><br/>
+                                <label for="lname">Last Name :<input type="text" class="roundinput" id="lname" name="lname"></label><br/>
+                                <label for="age">Age :<input type="number" class="roundinput" id="age" name="age" min="1"></label><br/>
+                                <label for="gender">Gender :
+                                <label for="male">Male <input type="radio" id="male" name="gender" value="male"></label>
+                                <label for="female">Female<input type="radio" id="female" name="gender" value="female"></label>
+                                <label for="other">Other<input type="radio" id="other" name="gender" value="other"></label>
+                                </label><br/>
+                                <label for="address">Address :<input type="text" class="roundinput" id="address" name="address"></label><br/>
+                                <label for="email">Email :<input type="email" class="roundinput" id="email" name="email"></label><br/>
+                                <br>
+                            </div>
+                            <div class="align20">
+                                <button id="save" class="roundButton" onclick="save();">Save</button></div><br>
+                            </div>
+                        </div>
+                        <div>
+                            <div id="bookInfo" class="content">
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <br><br>
+            
+            <!watermark>
+            <div>
+                <p class="smallText alignC blueLine"><br/>
+                    Copyright &copy; Book Finder 2020</p>
+            </div>
+            <div class="space"></div>
+        </div>
+</body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Book Finder</title>
+    <meta charset="utf-8">
+    <link type="text/css" rel="stylesheet" href="css/project.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src = "js/control.js"></script>
+    <script src = "js/login.js"></script>
+</head>
+<body>
+    <div class="fullWidth">
+        <!a banner>
+        <!div class="banner">
+        <!stational header>
+        <div class="header alignR">
+            <div class="spaceB "></div>
+            <p class ="whiteText headerText">Book Finder</p>
+            <div class="space"></div>
+        </div>
+        
+        <!buttons for navagation>
+        <div class="btn-group whiteText alignC">
+            <a href=index.htm><button>Home</button></a>
+            <a href=logIn.htm><button>Login</button></a>
+            <a href=bookSearch.htm><button>Search</button></a>
+        </div>
+        
+        <!body section>
+        <div class="wBackground center"> 
+            <div class="spaceM"></div><br><br>
+            <h1 class="alignC contentText">This is the log in page</h1>
+            <div class = "alignC contentText">
+                <h2>User Name/User ID:<br><input id="login" class="roundinput" type="text"></h2>
+                <h2>Password:<br><input id="password" class="roundinput" type="text"></h2>
+                <button id="loginButton" class="roundButton" onclick="login();">&nbsp;Submit&nbsp;</button>
+                <h2>Not a member yet? click here to register&nbsp;&nbsp;
+                    <button id="regButton" class="roundButton" onclick="window.location='register.htm';">&nbsp;Register&nbsp;</button>
+                </h2>
+            </div>    
+            <!watermark>
+            <div>
+                <p class="smallText alignC blueLine"><br/>
+                    Copyright &copy; Book Finder 2020</p>
+            </div>
+            
+            <div class="space"></div>
+            
+        </div>
+    </div>
+    
+</body>
+    
+</html>

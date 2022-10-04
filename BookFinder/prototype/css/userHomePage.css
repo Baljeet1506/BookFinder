@@ -1,0 +1,47 @@
+.table{
+    display: table;
+    width: 100%;
+    height: auto;
+}
+.row{
+    display: table-row;
+    width: auto;
+}
+
+.userPanel{
+    display: table-cell;
+    width: 30%;
+    height: 100%;
+}
+.detailInfo{
+    display: table-cell;
+    width: 70%;
+    height: 100%;
+}
+.userDetailTab button{
+    width: 50%;
+    float: left;
+    border: none;
+    outline: none;
+    padding: 15px 15px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.userDetailTab button:hover {
+  background-color: #ddd;
+}
+.userDetailTab button.active {
+  background-color: #ccc;
+}
+
+.content {
+  display: none;
+  border: 2px solid #ccc;
+  border-top: none;
+}
+
+.bivLine{
+    border: 2px solid #ccc;
+    border-style: hidden solid hidden solid;
+}
+

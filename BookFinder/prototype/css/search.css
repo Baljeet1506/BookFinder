@@ -1,0 +1,40 @@
+ #bookList {
+    text-align: center;
+}
+
+table {
+    display: inline-table;
+}
+
+td{
+    border: 1px solid black;
+}
+
+#bookFunction {
+    display: none;
+}
+
+#bookTable{
+    display: table;
+}
+#row {
+    display: table-row;
+}
+#imgPanel {
+    display: table-cell;
+    width: 30%;
+    height: auto;
+    border: 1px solid black;
+}
+
+#bookImage{
+    width: inherit;
+    height: inherit;
+}
+
+#bookPanel {
+    display: table-cell;
+    width: 70%;
+    height: auto;
+    border: 1px solid black;
+}

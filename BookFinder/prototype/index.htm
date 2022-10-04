@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+    
+<head>
+    <title>Book Finder</title>
+    <meta charset="utf-8">
+    <link type="text/css" rel="stylesheet" href="css/project.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+        $.post("php/sqlpdo.php",function(result){
+            console.log(result);
+        });
+    </script>
+</head>
+
+<body>
+    <div class="fullWidth">
+        <!a banner>
+        <!div class="banner">
+        <!stational header>
+        <div class="header alignR">
+            <div class="space"></div>
+            <p class ="whiteText headerText">Book Finder</p>
+            <div class="space"></div>
+        </div>
+        <!buttons for navagation>
+        <div class="btn-group whiteText alignC">
+            <a href=index.htm><button>Home</button></a>
+            <a href=logIn.htm><button>Login</button></a>
+            <a href=bookSearch.htm><button>Search</button></a>
+        </div>
+        
+        <!body section>
+        <div class="wBackground center contentText"> 
+            <br/><br/>
+            <div class="slider-holder">
+                <span id="slider-image-1"></span>
+                <span id="slider-image-2"></span>
+                <span id="slider-image-3"></span>
+            <div class="image-holder">
+                <img src="image/load1.jpg" class="slider-image" height=auto width="800">
+                <img src="image/load2.jpg" class="slider-image" height=auto width="800">
+                <img src="image/load3.jpg" class="slider-image" height=auto width="800">
+            </div>
+            <div class="button-holder">
+                <a href="#slider-image-1" class="slider-change"></a>
+                <a href="#slider-image-2" class="slider-change"></a>
+                <a href="#slider-image-3" class="slider-change"></a>
+            </div>
+         </div>
+            <h1 class="alignC"><br/>Wellcome to the Book Finder book management system<br/><br/>
+            Please login to borrow book or manage your profile</h1>
+            <!watermark>
+            <div>
+                <p class="smallText alignC blueLine"><br/>Copyright &copy; Book Finder 2020</p>
+            </div>
+            <div class="space"></div>
+            
+        </div>
+    </div>
+    
+</body>
+    
+</html>

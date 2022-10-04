@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+    
+<head>
+    <title>Book Finder</title>
+    <meta charset="utf-8">
+    <link type="text/css" rel="stylesheet" href="css/project.css">
+	<link type="text/css" rel="stylesheet" href="css/search.css">
+	<script src="js/bookSearch.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+
+<body>
+    
+    <div class="fullWidth">
+        <!a banner>
+        <!div class="banner">
+        
+        <!stational header>
+        <div class="header alignR">
+            <div class="spaceB "></div>
+            <p class ="whiteText headerText">Book Finder</p>
+            <div class="space"></div>
+        </div>
+        
+        <!buttons for navagation>
+        <div class="btn-group whiteText alignC">
+            <a href=index.htm><button>Home</button></a>
+            <a href=logIn.htm><button>Login</button></a>
+            <a href=bookSearch.htm><button>Search</button></a>
+        </div>
+        
+        <!body section>
+        <div class="wBackground center"> 
+            <div class="spaceB"></div>
+            <div class="alignC contentText">
+                <h1 >This is the search page</h1>
+                <h2>Enter book's title, author or ISBN to search </h2>
+            </div>
+            
+            <div class="space"></div><br><br>
+            
+            <div  class="alignC">
+                <input type="text" id="book" class = "roundinput">
+                &nbsp;&nbsp;&nbsp;
+                <button id="searchButton" class="roundButton" onclick = "searchBook();">&nbsp;Search&nbsp;</button>
+            </div><br>
+            
+            <div class="alignC" id="bookList">
+                
+            </div>
+            
+            <div id="bookFunction">
+				<div id='bookTable'>
+                    <div id='row'>
+                        <div id='imgPanel'><img id="bookImage" src='image/topPic1.jpg'/></div>
+                        <div id='bookPanel' id="bookInformation">
+                            <p id="title"></p>
+                            <p id="isbn"></p>
+                            <p id="author"></p>
+                            <p id="publicationDate"></p>
+                            <p id="condition"></p>
+                        </div>
+                    </div>
+                </div>
+                <div style="text-align: center">
+                    <button id="borrow" class="roundButton">Borrow</button>
+                    <button id="hold" class="roundButton">Hold</button>
+                </div>
+            </div>
+            
+            
+            <!watermark>
+            <div>
+                <p class="smallText alignC blueLine"><br/>
+                    Copyright &copy; Book Finder 2020</p>
+            </div>
+            
+            <div class="space"></div>
+            
+        </div>
+    </div>
+    
+</body>
+    
+</html>
